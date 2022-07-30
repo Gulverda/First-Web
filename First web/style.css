@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body
+{   
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055,#7597de);
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+.MoonLight
+{
+    color: #fff;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    margin-right: auto;
+    order: -1;
+}
+ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+
+ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+ul li a:hover,
+ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 1000;
+}
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#moon
+{
+    mix-blend-mode: screen;
+}
+section img#mountains_front
+{
+    z-index: 10;
+}
+#text
+{
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 6.5vw;
+    z-index: 9;    
+}
+#btn
+{
+    text-decoration:none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(150px);
+}
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec p
+{
+    font-size: 1em;
+    color: #fff;
+}
+.sec h1
+{
+    text-decoration:none;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1em;
+    z-index: 9;
+    transform: translateY(50px);
+}
+
+.sec center a
+{
+    text-decoration:none;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(50px);
+}
+
+/*Contact Section*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.contact-section
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info
+{
+    color: #fff;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+.contact-info i
+{
+    margin-top: 20px;
+    font-size: 25px;
+}
+.contact-form
+{
+    max-width: 700px;
+    margin-right: 50px;
+}
+.contact-info, .contact-form
+{
+    flex: 1;
+}
+.contact-form h2
+{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.contact-form .text-box
+{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0,9;
+}
+.contact-form .text-box:first-child
+{
+    margin-right: 15px;
+}
+.contact-form textarea
+{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0,9;
+}
+.contact-form .send-btn
+{
+    float: right;
+    background: #fff;
+    color: #2b1055;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+}
+.contact-form .send-btn:hover{
+    background: #ffffff;
+}
+
+@media screen and (max-width: 950px){
+    .contact-section{
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form{
+        margin: 30px 50px;
+    }
+
+    .contact-form h2{
+        font-size: 30px;
+    }
+
+    .contact-form .text-box{
+        width: 100%;
+    }
+}
+
+/*css for alert messages*/
+
+.alert-success{
+    z-index: 1;
+    background: #d4edda;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #3ad66e;
+    border-radius: 4px;
+    
+}
+
+.alert-error{
+    z-index: 1;
+    background: #fff3cd;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #ffa502;
+    border-radius: 4px;
+}
+
+
+
+
+
+/*Responsive*/
+
+
+nav {
+    width: 100%;
+    height: 0px;
+    display: absolute;
+    background-color: #2b1055;
+    justify-content: center;
+    align-items: center;
+    transition: 0s;
+    border-radius: 40px;
+    cursor: pointer;
+    opacity: 95%;
+    
+
+}
+ul li{
+    list-style: none;
+}
+ul{
+    display: flex;
+    cursor: pointer;
+}
+li{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 20px;
+}
+input[type="checkbox"]{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    margin-left: -80px;
+    margin-top: 50px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.mask {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    z-index: 2;
+    margin-left: -80px;
+    margin-top: 50px;
+    border-radius: 5px;
+    text-align: center;
+    color: #2b1055;
+    font-size: 40px;
+    line-height: 60px;
+    cursor: pointer;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    transform: translateY(0px);
+}
+@media (max-width: 760px){
+    nav{
+        height: 100vh;
+        transform: translateY(-2000px);
+        display: inline-flex;
+    }
+    input[type="checkbox"], .mask {
+        visibility: visible;
+        transform: translateY(-400px);
+    }
+    ul{
+        display: block;
+        align-items: center;
+    }
+    .MoonLight{
+        visibility: hidden;
+    }
+    li{
+        font-size: 25px;
+        padding: 15px;
+    }
+}
+
+
+
+/*Slider
+
+.slider{
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    border-style: double;
+    border-radius: 20px;
+    border-color: #ffffff;
+    background-color: #2b1055;
+}
+
+.images{
+    display: flex;
+    width: 100%;
+}
+
+.images img{
+    height: 100%;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+
+.images input{
+    display: none;
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dots label{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+.dots label:hover {background:#fff;}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+*/
+
+/*Images Container/Load More*/
+
+.images-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #1c0522;
+}
+.image{
+    width: calc(50% - 5px);
+    margin-bottom: 10px;
+    display: none;
+}
+.image img{
+    width: 100%;
+}
+.load-more{
+    display: block;
+    margin: auto;
+    height: 50px;
+    padding: 0 50px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #2b1055;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.load-more:hover{
+    opacity: .8;
+}

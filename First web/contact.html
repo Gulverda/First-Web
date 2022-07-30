@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+        <script src="https://kit.fontawesome.com/447103a4d5.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="mask"><i class="fa fa-bars"></i></div>
+            <input type="checkbox">
+            <nav>
+                <ul>
+                <a href="index.html" class="MoonLight">ML</a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Works</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="mountains_behind">
+            <h2 id="text">Contact Us</h2>
+            <a href="#sec" id="btn">&#8681</a>
+        </section>
+
+
+
+        <!--alert messages start
+        <div class="alert-success">
+            <span>Message Sent! Thank you for contacting us.</span>
+        </div>
+        <div class="alert-error">
+            <span>Something went wrong! Please try again.</span>
+        </div>
+        alert messages end-->
+
+        <!--contact section start-->
+        <div class="sec" id="sec">
+        <div class="contact-section">
+            <div class="contact-info">
+                <div><i class="fas fa-map-marker-alt"></i>Address, City, Country</div>
+                <div><i class="fas fa-envelope"></i>contact@mail.com</div>
+                <div><i class="fas fa-phone"></i>+995 000 00-00-00</div>
+                <div><i class="fas fa-clock"></i>Mon -Fri 8:AM to 5:00 PM</div>
+            </div>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form class="contact" action=""method="post">
+                    <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+                    <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <input type="submit" name="submit" class="send-btn" value="Send">
+                </form>
+            </div>
+        </div>
+        <center><a href="index.html" class="Home">Home</a></center>
+    </body>
+</html>

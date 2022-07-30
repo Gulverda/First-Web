@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/447103a4d5.js" crossorigin="anonymous"></script>
+        <title>Work</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <header>
+            <div class="mask"><i class="fa fa-bars"></i></div>
+            <input type="checkbox">
+            <nav>
+                <ul>
+                <a href="index.html" class="MoonLight">ML</a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html" class="active">Works</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="mountains_behind">
+            <h2 id="text">Works</h2>
+            <a href="#sec" id="btn">Explore</a>
+        </section>
+    <body>
+        <div class="images-container">
+                <div class="image">
+                    <img src="images/1.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="images/2.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="images/3.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="images/1.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="images/2.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="images/3.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="images/1.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="images/2.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="images/3.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="images/1.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="images/2.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="images/3.jpg" alt="">
+                </div>
+    
+                <button class="load-more">Load More</button>
+            <script>
+                $(document).ready(function(){
+                    $(".image").slice(0, 4).fadeIn();
+                    $(".load-more").click(function(){
+                        $(".image").slice(0, 12).fadeIn();
+                        $(this).fadeOut();
+                    });
+                });
+            </script>
+            <section>
+                <center><a href="index.html" id="btn" >Home</a></center>
+            </section>
+        </div>
+    </body>
+</html>
